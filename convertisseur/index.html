@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script defer src="script.js"></script>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Convertisseur</title>
+</head>
+<body>
+    
+    <div class="container mt-4">
+
+        <div class="row">
+            <div class="col-md-8 mx-auto p-4" style="background:#eee;">
+                 <h3 class="text-primary text-center">Convertisseur</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="temp1">Température</label>
+                            <input type="number" class="form-control" id="temp1" placeholder="45">
+                        </div>
+                        <div class="d-flex justify-content-around">
+                           <div>
+                                <input checked type="radio" name="unit1" value="1">
+                                <span style="margin-left:5px;"><b>Celcius</b></span>
+                           </div>
+                           <div>
+                                <input type="radio" name="unit1" value="2">
+                                <span style="margin-left:5px;"><b>Farentheit</b></span>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="temp2">Resultat</label>
+                            <input type="number" class="form-control" id="temp2" value="0"  placeholder="32">
+                        </div>
+                        <div class="d-flex justify-content-around">
+                           <div>
+                                <input  type="radio" name="unit2" value="1">
+                                <span style="margin-left:5px;"><b>Celcius</b></span>
+                           </div>
+                           <div>
+                                <input checked type="radio" name="unit2" value="2">
+                                <span style="margin-left:5px;"><b>Farentheit</b></span>
+                           </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-4">
+                       <div class="form-group mt-4">
+                            <button id="convertBtn" class="btn btn-primary">Convertir</button>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
